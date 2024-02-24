@@ -1,0 +1,160 @@
+<html lang="en">
+<head>
+<title>Dove Chocolate Campaign Introduction</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>DOVE<br>CHOCOLATE</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Brand Intro</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Campaign Intro</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Dove Chocolate All-Women Academy</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Showcase.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="https://chn.mars.com/sites/g/files/jydpyr336/files/2023-03/5%20copy.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="https://www.juicer.io/api/posts/444432570/images.jpg?external_id=CQd52VVHTNz&s=fddb8628f3ece880b5fea494eadb4bf4c331abdd" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="https://chn.mars.com/sites/g/files/jydpyr336/files/2023-03/4%20copy.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+    </div>
+
+    <div class="w3-half">
+      <img src="https://th.bing.com/th?id=OIP.uNQxQYfa8eZeUlUffWz2IwAAAA&w=215&h=290&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="https://www.dovechocolate.com/cdn-cgi/image/width=1440,height=580,f=auto,quality=90/sites/g/files/fnmzdf186/files/2020-12/Dove%20Home%20Banner%2021-9.PNG" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="https://www.dovechocolate.com/cdn-cgi/image/width=318,height=239,fit=cover,g=0.5x0.5,f=auto,quality=90/sites/g/files/fnmzdf186/files/2021-02/Mini-Dark-Choc-Creme-Caramlev2-21x9.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Brand -->
+  <div class="w3-container" id="services" style="margin-top:75px" >
+    <h1 class="w3-xxxlarge w3-text-red"><b>Brand Intro.</b></h1>
+    <hr style="width:50px;border:5px solid  red" class="w3-round">
+    <p>Dove, sold under the name "Galaxy" in the UK, is the chocolate brand name of Mars Food Company.</p>
+    <p> The brand name comes from a Chicago candy store established in 1956.
+         It entered the US market in 1985. Acquired by Mars Food in 1986. Entered the Chinese mainland market in 1989.
+         In 1995, it became China's leading chocolate brand, and "milk is fragrant and silky" became its classic advertising slogan.
+         On September 14, 2023, Dove's official Weibo announced that the Moutai liquor chocolate in cooperation with Moutai will be launched on September 16. 
+         On September 16, 2023, Moutai Dove's joint product “Mao Xiaoling” wine-filled chocolate was officially launched
+    </p>
+  </div>
+  
+  <!-- Campaign -->
+  <div class="w3-container" id="designers" style="margin-top:75px" >
+    <h1 class="w3-xxxlarge w3-text-red"><b>Campaign Intro.</b></h1>
+    <hr style="width:50px;border:5px solid  red" class="w3-round">
+    <p>"Your Pleasure Has Promise"</p>
+    <p>On March 8, 2023, Mars Wrigley's Dove brand announced its global new purpose - "Your Pleasure Has Promise" with the launch ceremony of Dove All-Women Academy held in Baiyan county, Southwest China's Guizhou Province.
+         By 2030, Dove is committed to helping one million women and their families to achieve prosperity and development. In China, by launching the Dove All-Women Academy partnering with the leading NGO China Foundation for Rural Development, Dove China is committed to empowering Chinese women with knowledge and skills for their development.
+    </p>
+    <p><b>Our campaign's strengths are thoughtfully chosen</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+        <img src="http://www.news.cn/food/20230926/1c7b6b3fbc2e459083c1c6111b564fb9/202309261c7b6b3fbc2e459083c1c6111b564fb9_20230926f9db57250cad4c3e845488adec643552.png" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Differentiation</h3>
+          <p class="w3-opacity">Female-focused</p>
+          <p>The target audience of the campaign is mainly young women living in first - and second-tier cities. 
+            They get information mainly from the internet, and also pay attention to self-care, willing to spend extra money for high quality products.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://www.globaltimes.cn/Portals/0/attachment/2023/2023-03-13/c41d7b8e-ffb7-4270-a525-8aac9663dbcb.jpeg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Consistency</h3>
+          <p class="w3-opacity">Blue tie-dry towel</p>
+          <p>Women Academy partnered with the China Foundation for Rural Development,
+             and provided customized training courses, so as to help women access development opportunities without leaving their hometowns.  </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+        <img src="https://img2.jiemian.com/101/original/import/20230927/import_1695793907321120170013_a700xH.png" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Countinuity</h3>
+          <p class="w3-opacity">Socially responsible </p>
+          <p>By 2030, Dove is committed to helping one million women and their families to achieve prosperity and development.
+            Dove reflects pleasure by making chocolate better, and enhances this pleasant experience by empowering women. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
+
